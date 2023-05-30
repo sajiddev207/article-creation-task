@@ -1,0 +1,49 @@
+@URL = http://localhost:8000
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDc2NTY4YTYzMmUzNWNmMDEwYzA3YjIiLCJpYXQiOjE2ODU0Nzc5MTYsImV4cCI6MTY4NTY1MDcxNn0.8nNQviEHgsf--EkaMaxsTVZvGmzAz-F3oJFg4xX8jdw
+
+### User Register API
+POST {{URL}}/api/signup
+Content-Type: application/json
+
+{
+    "email":"test07@mailinator.com",
+    "password":"123456",
+    "confirmPassword":"123456"
+}
+
+
+### User Login API
+POST {{URL}}/api/login
+Content-Type: application/json
+
+{
+    "email":"test07@mailinator.com",
+    "password":"123456"
+}
+
+### User Validate OTP API
+POST {{URL}}/api/createArticles
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title":"some",
+    "descriptions":"123456"
+}
+
+### User Validate OTP API
+POST {{URL}}/api/articles
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### User Validate OTP API
+POST {{URL}}/api/updateUserProfile
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "x",
+    "age":"10 year"
+}
+
